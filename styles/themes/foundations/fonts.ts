@@ -1,0 +1,2 @@
+const customFonts = {};
+export { customFonts };
