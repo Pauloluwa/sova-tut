@@ -1,8 +1,12 @@
 const customColors = {
   brand: {
-    black: "#242424",
-    darkBrown: "#99897E",
-    lightBrown: "#BFA28C",
+    nude: "#ede8e7",
+    orange: "#e36709",
+    white: "#ffffff",
+    pruple: "#aa1377",
+    darkgreen: "#004c3f",
+    offwhite: "#ede8e7",
+    black: "#311c1c",
   },
 };
 export { customColors };
