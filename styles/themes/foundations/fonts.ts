@@ -1,6 +1,5 @@
 const customFonts = {
-    fontFamily: 'Libre Bodoni',
-    fontFamily1: '"DM Sans", sans-serif',
-    fontFamily3: 'Mulish',
+    fontFamilyHeader: 'Libre Bodoni',
+    fontFamilyBody: 'Mulish',
 };
 export { customFonts };
