@@ -1,5 +1,9 @@
 const customFonts = {
-    fontFamilyHeader: 'Libre Bodoni',
-    fontFamilyBody: 'Mulish',
-};
-export { customFonts };
+  heading: 'Libre Bodoni',
+  body: 'Mulish'
+  //   mono: 'Menlo, monospace',
+  //   Helvetica: 'Helvetica Neue',
+  //   Azeret: 'Azeret Mono'
+}
+
+export { customFonts }
