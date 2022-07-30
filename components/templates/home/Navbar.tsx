@@ -1,5 +1,5 @@
-import { Box, Center, Container, HStack, Icon, Text } from '@chakra-ui/react'
-import { FiHeart, FiSearch } from 'react-icons/fi'
+import { Box, Center, Container, HStack, Icon, Img, Text } from '@chakra-ui/react'
+import { FiHeart, FiLogOut, FiSearch } from 'react-icons/fi'
 import { BsPerson } from 'react-icons/bs'
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
       <Container maxW={'1204px'} h={'full'} w={'full'}>
         <HStack w={'full'} spacing={'1rem'} h={'full'}>
           <Box w="25%">
-            <Text>Logo</Text>
+            <img src="/images/logo.png" alt="logo" />
           </Box>
           <HStack spacing={'1rem'} w={'50%'} h={'full'} justify={'center'}>
             {['jewelry', 'Collection', 'Outlet', 'Our Production'].map((txt, idx) => (
