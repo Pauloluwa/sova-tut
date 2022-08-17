@@ -1,4 +1,4 @@
-import { Box, Center, Container, HStack, Icon, Img, Text } from '@chakra-ui/react'
+import { Box, Center, Container, HStack, Icon } from '@chakra-ui/react'
 import { FiHeart, FiLogOut, FiSearch } from 'react-icons/fi'
 import { BsPerson } from 'react-icons/bs'
 

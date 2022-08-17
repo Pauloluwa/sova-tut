@@ -6,7 +6,7 @@ const globalStyles = {
     body: {
       color: "brand.black",
       fontSize: "1.6rem",
-      fontFamily: '"DM Sans", sans-serif',
+      fontFamily: '"Libre Bodoni" ',
     },
     "h1, h2, h3, h4, h5, h6": {
       color: "brand.dark",

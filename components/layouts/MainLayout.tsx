@@ -11,7 +11,7 @@ const MainLayout = ({ children }: IProps) => {
   return (
     <Box p={0}>
       <Navbar />
-      <Container maxW={'1204px'} minH={calc.subtract('100vh', '10rem')}>
+      <Container maxW={'full'} minH={calc.subtract('100vh', '10rem')} p={0}>
         {children}
       </Container>
       <Footer />
