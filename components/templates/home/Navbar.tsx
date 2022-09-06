@@ -11,7 +11,7 @@ const Navbar = () => {
             <Img src="/images/logo.png" alt="logo" />
           </Box>
           <HStack spacing={'1rem'} w={'50%'} h={'full'} justify={'center'}>
-            {['jewelry', 'Collection', 'Outlet', 'Our Production'].map((txt, idx) => (
+            {['jewelry', 'Collection', '%Outlet', 'Our Production'].map((txt, idx) => (
               <Center key={idx} h="full" w={'25%'}>
                 {txt}
               </Center>

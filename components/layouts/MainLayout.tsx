@@ -14,6 +14,7 @@ const MainLayout = ({ children }: IProps) => {
       <Container maxW={'full'} minH={calc.subtract('100vh', '10rem')} p={0}>
         {children}
       </Container>
+    
       <Footer />
     </Box>
   )

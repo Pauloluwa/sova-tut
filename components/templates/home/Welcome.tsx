@@ -4,7 +4,6 @@ import { Box, Button, Container, VStack, SimpleGrid, Img, Text, Spacer } from '@
 const Welcome = () => {
   return (
     <SimpleGrid
-      // h={'920px'}
       w="100%"
       bg={'white'}
       padding="20px 0 20px 0"
