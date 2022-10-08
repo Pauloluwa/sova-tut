@@ -1,5 +1,5 @@
 import { SimpleGrid, Box, Stack, HStack, Text, Img, Popover } from '@chakra-ui/react'
-import { getImageSize } from 'next/dist/server/image-optimizer'
+
 import React from 'react'
 import { bestseller, outlets } from '../data'
 
@@ -18,20 +18,31 @@ const Cart = () => {
           {bestseller.map((value) => (
             <Box key={value?.id} w={'280px'} h={'340px'} border="1px solid black">
               <Text fontSize={'23px'}></Text>
-              <Box
-                width={'240px'}
-                height={'240px'}
-                display={'block'}
-                margin={'0 auto'}
-                border={'2px solid #bb87ff'}>
-                <Img src={value?.src} alt="" />
+              <Box width={'240px'} height={'240px'} display={'block'} margin={'0 auto'}>
+                <Box width={'100px'} height={'25px'} backgroundColor={'#aa1377'}>
+                  <Text fontSize={'13px'} color={'white'} textAlign={'center'}>
+                    {value?.details}
+                  </Text>
+                </Box>
+
+                <Box width={'50px'} height={'25px'} backgroundColor={'#e36709'} marginTop={'6px'}>
+                  <Text fontSize={'13px'} color={'white'} textAlign={'center'}>
+                    {value?.position}
+                  </Text>
+                </Box>
+
+                <Img width={'200px'} height={'200px'} src={value?.src} alt="" />
               </Box>
-              <Text fontSize={'23px'} display={'flex'} justifyContent={'center'}>
-                {value?.name}
-              </Text>
-              <Text fontSize={'23px'} display={'flex'} justifyContent={'center'}>
-                {value?.price}
-              </Text>
+
+              <Box paddingTop={'4rem'}>
+                <Text fontSize={'20px'} display={'flex'} justifyContent={'center'}>
+                  {value?.name}
+                </Text>
+
+                <Text fontSize={'20px'} display={'flex'} justifyContent={'center'}>
+                  {value?.price}
+                </Text>
+              </Box>
             </Box>
           ))}
         </HStack>
@@ -54,18 +65,43 @@ const Cart = () => {
                   height={'240px'}
                   display={'block'}
                   margin={'0 auto'}
-                  border={'2px solid #bb87ff'}
                   cursor={'pointer'}>
+                  <Box
+                    width={'100px'}
+                    height={'25px'}
+                    backgroundColor={'#aa1377'}
+                    marginTop={'6px'}>
+                    <Text fontSize={'13px'} color={'white'} textAlign={'center'}>
+                      {value?.detail}
+                    </Text>
+                  </Box>
+
+                  <Box width={'50px'} height={'25px'} backgroundColor={'#004c3f'} marginTop={'6px'}>
+                    <Text fontSize={'13px'} color={'white'} textAlign={'center'}>
+                      {value?.details}
+                    </Text>
+                  </Box>
+
+                  <Box width={'50px'} height={'25px'} backgroundColor={'#e36709'} marginTop={'6px'}>
+                    <Text fontSize={'13px'} color={'white'} textAlign={'center'}>
+                      {value?.position}
+                    </Text>
+                  </Box>
+
                   <Popover>
-                    <Img src={value?.src} alt="" width={'200px'} height={'240px'} />
+                    <Img src={value?.src} alt="" width={'200px'} height={'200px'} />
                   </Popover>
                 </Box>
-                <Text fontSize={'23px'} display={'flex'} justifyContent={'center'}>
-                  {value?.name}
-                </Text>
-                <Text fontSize={'23px'} display={'flex'} justifyContent={'center'}>
-                  {value?.price}
-                </Text>
+
+                <Box paddingTop={'4rem'}>
+                  <Text fontSize={'20px'} display={'flex'} justifyContent={'center'}>
+                    {value?.name}
+                  </Text>
+
+                  <Text fontSize={'20px'} display={'flex'} justifyContent={'center'}>
+                    {value?.price}
+                  </Text>
+                </Box>
               </Box>
             ))}
           </SimpleGrid>
